@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/Lookup-ComboboxMode/Form1.cs) (VB: [Form1.vb](./VB/Lookup-ComboboxMode/Form1.vb))
+* [Program.cs](./CS/Lookup-ComboboxMode/Program.cs) (VB: [Program.vb](./VB/Lookup-ComboboxMode/Program.vb))
+<!-- default file list end -->
 # Lookup Editors - Combobox Mode
 
 
