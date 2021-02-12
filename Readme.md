@@ -13,6 +13,10 @@
 * the ValueMember and DisplayMember properties are set to an empty string (see the LookupEdit control initialization), or to the same field in the lookup data source (see the GridLookupEdit control initialization).
 * the TextEditStyle property is set to Standard to enable text editing.</p>
 
+<b>See also:</b>
+
+[DevExpress WinForms Troubleshooting - LookUp Editors](https://go.devexpress.com/CheatSheets_WinForms_Examples_T929986.aspx)
+
 <br/>
 
 
