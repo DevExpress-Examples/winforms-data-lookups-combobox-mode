@@ -1,5 +1,7 @@
-﻿Namespace Lookup_ComboboxMode
-    Partial Public Class Form1
+Namespace Lookup_ComboboxMode
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -30,19 +32,18 @@
             Me.gridLookUpEdit1View = New DevExpress.XtraGrid.Views.Grid.GridView()
             Me.lblLookupEdit = New DevExpress.XtraEditors.LabelControl()
             Me.lblGridLookupEdit = New DevExpress.XtraEditors.LabelControl()
-            CType(Me.lookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.gridLookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.gridLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.lookUpEdit1.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.gridLookUpEdit1.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.gridLookUpEdit1View), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' lookUpEdit1
             ' 
             Me.lookUpEdit1.Location = New System.Drawing.Point(14, 73)
             Me.lookUpEdit1.Name = "lookUpEdit1"
-            Me.lookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.lookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.lookUpEdit1.Size = New System.Drawing.Size(187, 20)
             Me.lookUpEdit1.TabIndex = 0
-
             ' 
             ' labelControl1
             ' 
@@ -64,17 +65,16 @@
             ' 
             Me.gridLookUpEdit1.Location = New System.Drawing.Point(314, 73)
             Me.gridLookUpEdit1.Name = "gridLookUpEdit1"
-            Me.gridLookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.gridLookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.gridLookUpEdit1.Properties.View = Me.gridLookUpEdit1View
             Me.gridLookUpEdit1.Size = New System.Drawing.Size(187, 20)
             Me.gridLookUpEdit1.TabIndex = 3
-
             ' 
             ' gridLookUpEdit1View
             ' 
             Me.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
             Me.gridLookUpEdit1View.Name = "gridLookUpEdit1View"
-            Me.gridLookUpEdit1View.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Default
+            Me.gridLookUpEdit1View.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
             Me.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = False
             Me.gridLookUpEdit1View.OptionsView.ShowGroupPanel = False
             ' 
@@ -85,7 +85,7 @@
             Me.lblLookupEdit.Name = "lblLookupEdit"
             Me.lblLookupEdit.Size = New System.Drawing.Size(164, 26)
             Me.lblLookupEdit.TabIndex = 4
-            Me.lblLookupEdit.Text = "LookupEdit " & ControlChars.CrLf & "(lookup data source is array)"
+            Me.lblLookupEdit.Text = "LookupEdit " & Global.Microsoft.VisualBasic.Constants.vbCrLf & "(lookup data source is array)"
             ' 
             ' lblGridLookupEdit
             ' 
@@ -94,7 +94,7 @@
             Me.lblGridLookupEdit.Name = "lblGridLookupEdit"
             Me.lblGridLookupEdit.Size = New System.Drawing.Size(261, 26)
             Me.lblGridLookupEdit.TabIndex = 4
-            Me.lblGridLookupEdit.Text = "GridLookupEdit " & ControlChars.CrLf & "(lookup data source is list of business objects)"
+            Me.lblGridLookupEdit.Text = "GridLookupEdit " & Global.Microsoft.VisualBasic.Constants.vbCrLf & "(lookup data source is list of business objects)"
             ' 
             ' Form1
             ' 
@@ -109,23 +109,27 @@
             Me.Controls.Add(Me.lookUpEdit1)
             Me.Name = "Form1"
             Me.Text = "Lookup - Combobox Mode"
-            CType(Me.lookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.gridLookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.gridLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.lookUpEdit1.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.gridLookUpEdit1.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.gridLookUpEdit1View), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+#End Region
         Private lookUpEdit1 As DevExpress.XtraEditors.LookUpEdit
+
         Private labelControl1 As DevExpress.XtraEditors.LabelControl
+
         Private labelControl2 As DevExpress.XtraEditors.LabelControl
+
         Private gridLookUpEdit1 As DevExpress.XtraEditors.GridLookUpEdit
+
         Private gridLookUpEdit1View As DevExpress.XtraGrid.Views.Grid.GridView
+
         Private lblLookupEdit As DevExpress.XtraEditors.LabelControl
+
         Private lblGridLookupEdit As DevExpress.XtraEditors.LabelControl
     End Class
 End Namespace
-
