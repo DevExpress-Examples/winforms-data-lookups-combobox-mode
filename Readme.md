@@ -3,25 +3,42 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T378371)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WinForms Lookup Editors - Combobox mode
+
+This example shows how to use [LookupEdit]() and [GridLookupEdit]() controls in combobox mode. In this mode, users can type in the text box and enter values that are not in the data source.
+
+In this example, the `LookupEdit` is bound to an array of strings. The `GridLookupEdit` is bound to a list of business objects.
+
+Do the following to enable the Combobox Mode:
+
+* Set the `Properties.TextEditStyle` property to `TextEditStyles.Standard` to allow users to type in the text box.
+* Set the `GridLookUpEdit` control's `ValueMember` and `DisplayMember` properties to the same data field (with string values). For the `LookUpEdit`, these proprties are not specified (set to an empty string).
+  
+  ```csharp
+  gridLookUpEdit1.Properties.ValueMember = "ProductName";
+  gridLookUpEdit1.Properties.DisplayMember = gridLookUpEdit1.Properties.ValueMember;
+  ```
+* Enable the `AcceptEditorTextAsNewValue` options property enables entering custom text in the edit box.
+* Handle the `ProcessNewValue` event to parse entered values and add new records to the lookup’s data source.
+
+Read the following help topic for more information: [ComboBox Mode - Enter New Values](https://docs.devexpress.com/WindowsForms/116019/controls-and-libraries/editors-and-simple-controls/lookup-editors/combobox-mode-allow-entering-new-values).
+
+
+## Files to Review
 
 * [Form1.cs](./CS/Lookup-ComboboxMode/Form1.cs) (VB: [Form1.vb](./VB/Lookup-ComboboxMode/Form1.vb))
-* [Program.cs](./CS/Lookup-ComboboxMode/Program.cs) (VB: [Program.vb](./VB/Lookup-ComboboxMode/Program.vb))
-<!-- default file list end -->
-# Lookup Editors - Combobox Mode
 
 
-<p>This example shows the use of LookupEdit and GridLookupEdit controls in combobox mode, in which the editors accept any text in the edit box. An end-user can select an existing value from a lookup data source or type any string. The text entered is saved in the editor's edit value when the editor loses focus.<br>Lookup data sources for the LookupEdit and GridLookupEdit controls are an array of strings and a list of business objects, respectively.<br>Combobox mode is enabled when the following conditions are met
+## Documentation
 
-* the AcceptEditorTextAsNewValue property enables entering custom text in the edit box.
-* the ValueMember and DisplayMember properties are set to an empty string (see the LookupEdit control initialization), or to the same field in the lookup data source (see the GridLookupEdit control initialization).
-* the TextEditStyle property is set to Standard to enable text editing.</p>
+* [ComboBox Mode - Enter New Values](https://docs.devexpress.com/WindowsForms/116019/controls-and-libraries/editors-and-simple-controls/lookup-editors/combobox-mode-allow-entering-new-values)
+* [WinForms Lookup Editors](https://docs.devexpress.com/WindowsForms/116008/controls-and-libraries/editors-and-simple-controls/lookup-editors)
+* [Lookup Main Settings](https://docs.devexpress.com/WindowsForms/116029/controls-and-libraries/editors-and-simple-controls/lookup-editors/lookup-editors-and-main-settings)
 
-<b>See also:</b>
 
-[DevExpress WinForms Troubleshooting - LookUp Editors](https://go.devexpress.com/CheatSheets_WinForms_Examples_T929986.aspx)
+## See Also
 
-<br/>
+* [DevExpress WinForms Troubleshooting - LookUp Editors](https://go.devexpress.com/CheatSheets_WinForms_Examples_T929986.aspx)
 
 
