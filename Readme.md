@@ -19,7 +19,7 @@ Do the following to enable the Combobox Mode:
   gridLookUpEdit1.Properties.ValueMember = "ProductName";
   gridLookUpEdit1.Properties.DisplayMember = gridLookUpEdit1.Properties.ValueMember;
   ```
-* Enable the `AcceptEditorTextAsNewValue` options property enables entering custom text in the edit box.
+* Enable the `AcceptEditorTextAsNewValue` options property, which enables users to enter custom text in the edit box.
 * Handle the `ProcessNewValue` event to parse entered values and add new records to the lookup’s data source.
 
 Read the following help topic for more information: [ComboBox Mode - Enter New Values](https://docs.devexpress.com/WindowsForms/116019/controls-and-libraries/editors-and-simple-controls/lookup-editors/combobox-mode-allow-entering-new-values).
